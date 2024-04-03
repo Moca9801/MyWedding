@@ -17,17 +17,7 @@ https://github.com/Moca9801/MyWedding.git
 2. Open the `index.html` file in your web browser to view the digital invitation.
 
 3. Customize the digital invitation according to your needs by modifying the content and styles in the HTML, CSS, and JavaScript files!
-
-## Contributing
-
-If you would like to contribute to this project, we're glad to receive your contributions! You can do so by following these steps:
-
-1. Fork this repository.
-2. Create a new branch (`git checkout -b feature/new-feature`).
-3. Make your changes and ensure everything works correctly.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push your changes to your GitHub repository (`git push origin feature/new-feature`).
-6. Submit a pull request and describe your proposed changes in detail.
+4. 
 
 ## License
 
