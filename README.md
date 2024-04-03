@@ -17,7 +17,17 @@ https://github.com/Moca9801/MyWedding.git
 2. Open the `index.html` file in your web browser to view the digital invitation.
 
 3. Customize the digital invitation according to your needs by modifying the content and styles in the HTML, CSS, and JavaScript files!
-4. 
+
+## Running Live Server Manually
+
+If you prefer to run Live Server manually instead of using the extension in Visual Studio Code, you can do so by following these steps:
+
+1. Open a terminal on your system.
+2. Navigate to the directory where your project is located.
+3. Run the following command to start Live Server:
+
+```bash
+live-server
 
 ## License
 
