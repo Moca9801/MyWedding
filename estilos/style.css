@@ -1,0 +1,1159 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+@import url('https://miboda.love/endPoint/paula/fuentes/fuentes.css');
+::-moz-selection { color: white;  background: black; }
+::selection      { color: white;  background: black; }
+/* Fuentes */
+/* ==Titulos== */
+.logo-novia, .logo-novio,
+.header-nombres div,
+.wrap-novios, 
+.propuesta h2,
+.wrap-info-texto,
+.propuesta .comillas:before,
+.propuesta .comillas:after,
+#photos h2, .mesa-container h2,
+.recomendaciones-section h2 a{
+    font-family: "Tangerine";
+}
+/* ==Texto== */
+*,.info-pareja h2, div,p,.wrap-fecha p {
+    font-family: "poiret";
+}
+*{
+    -webkit-font-smoothing: antialiased;
+    box-sizing:border-box;
+}
+/*Musica*/
+.grid-sizer,.grid-item {
+    width:25%;
+}
+.grid-item {
+    float: left;
+}
+.grid-item--width2 { width: 100%; }
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+.musica {
+    cursor: pointer;
+    display: block;
+    height: 38px;
+    position: fixed;
+    transform: translateZ(0px);
+    width: 38px;
+    padding: 10px;
+    z-index: 100000;
+    right: 16px;
+    bottom: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url("https://miboda.love/endPoint/generador/img/audio.svg");
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50%;
+    opacity: 0.85;
+}
+
+.musica:before {
+    content: "";
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.main-page {
+    width: 100%;
+    overflow: hidden;
+}
+.owl-stage{
+    width: 100%;
+}
+header {
+    background-size: 90%;
+    width: 100%;
+    padding: 28px 0;
+    text-align: center;
+    background-color:#fff;
+}
+.logo{
+    width: 100%;
+    height: 70px;
+}
+.logo-novia{
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #146b42;
+    text-align: center;
+    top: 10px; z-index: 1000;
+}
+form{
+    position: relative;
+}
+form .wrap-confirmacion{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255,255,255,.85);
+    border: 3px solid #000;
+    padding:0 10px;
+    display: none;
+}
+form .wrap-confirmacion h1{
+    font-size: 40px;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 25%;
+}
+form .wrap-confirmacion h1 b{
+    text-decoration: underline;
+    font-weight: 600;
+}
+form input, form textarea, form select {
+    transition: all .30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+  }
+form input:focus, form textarea:focus, form select:focus  {
+  box-shadow: 0 0 10px rgba(27, 27, 27,.1);
+  /* margin: 5px 1px 3px 0px; */
+  border: 1px solid rgb(222, 222, 222);
+}
+
+*, div {
+    box-sizing: border-box;
+    color: #000;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo-wrapper {
+    width: 486px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-nombres {
+    position: relative;
+    padding-bottom: 34px;
+    line-height: 38px;
+    font-size: 50px
+}
+
+.header-nombres div {
+    font-size: 1em;
+}
+
+div.nombre-and {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 18px;
+    color: #1d965d;
+}
+
+.nombre-novia, .nombre-novio {
+    color: #000;
+    position: absolute;
+    top: 0;
+}
+
+.nombre-novia {
+    right: 59%;
+}
+
+.nombre-novio {
+    left: 59%;
+}
+
+.logo-wrapper p{
+    display: block;
+    line-height: 22px;
+    max-width: 100%;
+    margin:0 auto;
+}
+.logo-wrapper p span{
+    display: block;
+    margin:10px 0;
+}
+.logo-wrapper p:before{
+    content:"";
+    width:80px;
+    height: 2px;
+    background-color:#086134;
+    display: block;
+    margin:40px auto;
+}
+
+header span {
+    font: normal 12px/20px poiret;
+    display: block;
+    padding-top: 5px;
+    color: #898989;
+    letter-spacing: 4px;
+}
+
+.carousel {
+    width: 90%;
+    position: relative;
+    margin:0 auto;
+}
+.carousel img{
+    width: 100%;
+    height: auto;
+}
+.carousel:before{
+    content:"";
+    right:10px;
+    left:10px;
+    bottom:10px;
+    top:10px;
+    border:2px solid #fff;
+    position: absolute;
+}
+
+.carousel:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    z-index: 10000;
+    background-size: cover;
+    display: none;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.info-pareja {
+    padding: 75px 0;
+}
+
+.wrap-novios, .wrap-fecha {
+    width: 32.9%;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+div.wrap-novios-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.novia-img {
+    background: url("./../img/adi.jpg") top center;
+}
+
+.novio-img {
+    background: url("/img/angel.jpg") top center;
+}
+
+.wrap-novios {
+    padding: 10px;
+}
+
+.wrap-novios h3 {
+    font-size: 30px;
+    color: #000;
+    margin-top: 18px;
+    font-weight: bolder;
+}
+
+.info-pareja .container {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 65px;
+}
+
+.wrap-fecha p {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.info-pareja h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center
+}
+
+.wrap-info-texto {
+    text-align: center;
+    color: #000;
+    width: 70%;
+    margin: 45px auto;
+    font-size: 24px
+}
+
+.wrap-info-texto p {
+    color: #000;
+}
+
+.contador-container {
+    padding: 20px 10px;
+    border:1px solid #1d965d;
+    margin-top: 50px;
+    position: relative;
+}
+
+.contador-container:before {
+    content: "Faltan";
+    background: #fff;
+    position: absolute;
+    top: -15px;
+    text-align: center;
+    font-size: 20px;
+    left: 50%;
+    width: 140px;
+    margin-left: -70px;
+    letter-spacing: 6px;
+}
+
+.contador-container:after {
+    content: "";
+    border: 1px solid #1d965d;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    position: absolute;
+    z-index: -1;
+}
+
+.contador-container div {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 42px;
+}
+
+.contador-container div:first-child {
+    margin: 0;
+}
+
+.contador-container>div:after {
+    content: "Días";
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.confirmar{
+    background-color: #000;
+    color: white;
+    width: 100%;
+    box-shadow: 0 1 30px 10px rgba(0, 0, 0, 0.1);
+
+}
+.confirmar:hover{
+    background-color: #898989;
+}
+
+.contador-container>div:nth-child(2):after {
+    content: "Horas";
+}
+
+.contador-container>div:nth-child(3):after {
+    content: "Minutos";
+}
+
+.contador-container>div:nth-child(4):after {
+    content: "Segundos";
+}
+
+.contador-container p {
+    font-size: 14px;
+}
+
+.eventos-container h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.eventos-container {
+    padding-bottom: 72px;
+}
+
+.wrap-eventos {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.wrap-eventos .col {
+    width: 32%;
+    vertical-align: middle;
+    display: inline-block;
+    font-size:18px;
+}
+
+.wrap-eventos .hora {
+    border: 1px solid #000;
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px 0;
+    display: inline-block;
+}
+
+.wrap-eventos a {
+    border: 1px solid #000;
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px 0;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.wrap-eventos a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrap-eventos h5 {
+    font-size: 44px;
+    margin-bottom: 32px;
+}
+
+.direccion-img {
+    width: 1px;
+    height: 240px;
+    margin: 0 auto;
+    background: #000;
+}
+
+.wrap-eventos p {
+    font-size: 16px;
+    margin-bottom: 6px;
+    line-height: 20px
+}
+
+.rsvp-container {
+    padding: 80px 0;
+    background-color: #f4f2f3;
+    overflow: hidden;
+}
+
+.rsvp-wrap {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 780px;
+}
+
+.rsvp-container form {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding: 50px 60px;
+    z-index: 5;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, .05);
+}
+
+.rsvp-container .foto-bk {
+    width: 300px;
+    height: 90%;
+    position: absolute;
+    right: -150px;
+    background: url(../img/compromiso.jpg) no-repeat right center;
+    background-size: cover;
+    z-index: 1;
+    transform: rotate(10deg);
+    bottom: 0;
+    border: 15px solid #fff;
+}
+
+.rsvp-container h2 {
+    font-size: 24px;
+    margin-bottom:6px;
+    
+}
+.rsvp-container small{
+    margin-bottom: 34px;
+    display:block;
+}
+
+.rsvp-container button {
+    border: 1px solid #000;
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px 0;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background:#fff;
+}
+
+.rsvp-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.rsvp-container input,
+.rsvp-container textarea,
+.rsvp-container select  {
+    border: 1px solid #eee;
+    padding: 8px 14px;
+    font-size: 16px;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.rsvp-container select{
+    background:#fff;
+    min-width: 48%;
+}
+
+.rsvp-container .row {
+    margin-bottom: 24px;
+}
+
+.rsvp-container .usr-nombre,
+.rsvp-container textarea {
+    width: 100%;
+}
+
+.dbl-col {
+    overflow: hidden;
+}
+
+.dbl-col input, .dbl-col select {
+    width: 99%;
+}
+
+
+.dbl-col input:last-child, .dbl-col select:last-child {
+    float: right;
+}
+
+.rsvp-container textarea {
+    height: 90px;
+    resize: none;
+}
+
+.lineas-form {
+    width: 100px;
+    height: 60px;
+    background: url("https://miboda.love/endPoint/paula/img/lineas-form.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    transform: rotate(-3deg);
+}
+
+.wrap-recomendacion {
+    border: 1px solid #eee;
+    padding: 0 0 10px;
+    transition: .2s ease-in-out all;
+    text-align: center;
+    min-height: 280px;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, .05);
+}
+
+.wrap-recomendacion p{
+    padding:0 4px;
+    line-height: 24px;
+}
+.wrap-recomendacion:last-child {
+    margin: 0;
+}
+
+.wrap-recomendacion h3, .wrap-recomendacion .titulo-recomendacion {
+    margin: 12px 0;
+    font-weight: bold;
+    min-height: 28px;
+    font-size: 19px;
+}
+.recomendaciones-section h2 a{
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    width: 260px;
+    margin: 20px auto 0;
+    padding: 4px 10px;
+    text-align: center;
+    border: 1px solid #1d965d;
+}
+.otros-section, .recomendaciones-section{
+    padding: 60px 0;
+}
+
+.otros-section h2, .recomendaciones-section h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.otros-section p, .recomendaciones-section .recomendaciones-texto{
+    max-width: 640px;
+    text-align: center;
+    margin: 12px auto ;
+    line-height: 18px;
+    width: 90%;
+}
+
+.otros-container,#recomendaciones-carousel{
+    padding: 50px 0;
+    width: 95%;
+    margin: 0 auto;
+}
+.grid-item{
+    padding:5px 5px;
+}
+.recomendaciones-section .item {
+    border: 1px solid #eee;
+    padding: 0 0 10px;
+    transition: .2s ease-in-out all;
+    text-align: center;
+    min-height: 280px;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, .05);
+}
+
+.recomendaciones-section .item p{
+    padding:0 4px;
+}
+.recomendaciones-section .item:last-child {
+    margin: 0;
+}
+
+.recomendaciones-section .item h3 {
+    margin: 12px 0;
+    font-weight: bold;
+    min-height: 28px;
+    font-size: 19px;
+}
+.iniciales{
+    border: 1px solid #707070;
+    right: 40px;
+    top: 30px;
+    border-radius: 6px;
+    padding: 7px;
+    text-align: center;
+    font-size: 20px;
+    width: 32px;
+    color: #707070;
+    position: absolute;
+    background: #fff;
+    opacity: 0.76;
+}
+.iniciales span{
+    display: block;
+}
+.divisor{
+    background: #707070;
+    width: 100%;
+    height: 1px;
+    margin: 6px 0;
+}
+
+.recomendaciones-section .item a, .item button, .wrap-recomendacion a {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    width: 90%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 20px auto;
+    background:#fff;
+}
+
+#recomendaciones-carousel .owl-stage-outer{
+    overflow: visible!important;
+}
+.otros-section .owl-carousel .owl-stage-outer {
+    padding: 40px 0;
+    overflow: visible;
+}
+
+.owl-theme .owl-dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.owl-dot {
+    background: #ccc;
+    display: inline-block;
+    width: 38px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0 5px;
+    position: relative;
+}
+.owl-dot span{
+    display:none!important;
+}
+.owl-dot.active{
+    background: #777!important;
+}
+.recomendaciones-section .item:hover {
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
+    transform: translate(0, -10px) scale(1.05, 1.05);
+}
+
+.recomendaciones-section .item a:hover, .item button:hover, .wrap-recomendacion a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.recomendaciones-section .item img {
+    width: 100%;
+}
+
+.mesa-container {
+    padding: 50px 0;
+}
+.mesa-container span{
+    margin-bottom:24px;
+    display: block;
+}
+
+
+/*Galeria*/
+
+.galeria-container {
+    position: relative;
+}
+#photos ul {
+    list-style: none;
+    margin: 0px auto;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+#photos li {
+    overflow: hidden;
+    max-height: 100vh;
+}
+#photos img {
+    width: 100%;
+}
+#overlay {
+    background: rgba(10, 51, 34, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+}
+
+#overlay img {
+    margin-top: 10%;
+    margin-left: -25%;
+    width: 50%;
+    left: 50%;
+    position: absolute;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, .05);
+}
+
+#photos h2, .mesa-container h2{
+    text-align: center;
+    font-size: 32px;
+}
+.mesa-container h2{
+    font-family: inherit;
+    font-weight:bold;
+    margin-bottom: 24px;
+}
+.mesa-container p{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    width: 600px;
+    margin:0 auto;
+}
+#photos-galeria {
+    position: relative;
+    margin:0 auto;
+}
+
+#photo-gallery {
+    width: 100%;
+}
+.mesa-container a{
+    margin:34px auto;
+    width:340px;
+    display: block;
+}
+.mesa-container img{
+    width:100%;
+}
+/*Modal container*/
+.modal-container {
+    background: rgba(255, 255, 255, .98);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    display: none;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+.modal-wrap {
+    width: 80%;
+    max-width: 800px;
+    border: 3px solid #000;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -40%;
+    top: 10%;
+    position: absolute;
+}
+
+.modal-wrap h3 {
+    font-weight: 600;
+    font-size: 38px;
+    position: absolute;
+    background: #fff;
+    padding: 0 20px;
+    top: -20px;
+    left: 20px;
+
+}
+.modal-wrap h5 {
+    font-size: 20px;
+}
+.modal-wrap h3 span {
+    color: #000;
+}
+
+.wrap-info-modal, .modal-wrap {
+    padding: 30px 40px;
+}
+
+.wrap-info-modal ul, .modal-wrap ul {
+    padding-top: 28px;
+}
+
+.wrap-info-modal li, .modal-wrap li{
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.cerrar-modal {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 1000
+}
+
+.cerrar-modal:before,
+.cerrar-modal:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #000;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.cerrar-modal:after {
+    transform: rotate(-45deg);
+    left: 0;
+}
+
+.cerrar-modal:before {
+    right: 0;
+}
+
+.modal-wrap li:before,.wrap-info-modal li:before {
+    content: "- ";
+    color: #000;
+    margin-right: 5px;
+}
+
+.wrap-info-modal img {
+    width: 50%;
+    float: left;
+}
+
+form p {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0;
+    display: none;
+}
+/* Propuesta */
+
+.propuesta {
+    background-image: url("../img/compromiso.jpg");
+    padding: 100px 0 340px;
+    color: #fff;
+    overflow: auto;
+    background-position: bottom;
+    background-size:contain;
+    text-align: center;
+    position: relative;
+}
+
+.propuesta:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .2);
+    background:linear-gradient(0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.3) 74%);
+}
+
+
+.propuesta h2 {
+    color: inherit;
+    margin-top: 28px;
+    color:inherit;
+    font-size: 56px;
+}
+
+.propuesta .container {
+    z-index: 100;
+    max-width: 600px;
+    padding-bottom: 140px;
+    margin:0 auto;
+    color:inherit;
+    position: relative;
+}
+
+.propuesta h3 {
+    
+    margin-bottom: 34px;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    color:inherit
+}
+
+.propuesta p {
+    font-size: 16px;
+    line-height: 24px;
+    color:inherit;
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+
+.propuesta .comillas:before,
+.propuesta .comillas:after {
+    content: '\201C';
+    font-size: 42px;
+    position: relative;
+    line-height: 0;
+}
+
+.propuesta .comillas:after {
+    content: "\201D";
+}
+
+.pareja {
+    background: url("../img/compromiso.jpg") no-repeat;
+   background-size: cover;
+    width: 319px;
+    height: 508px;
+    position: absolute;
+    z-index: 100;
+    margin-left: -160px;
+    bottom: -60px;
+    left: 50%;
+
+}
+
+@media (max-width: 980px) {
+    .wrap-eventos {
+        width: 95;
+    }
+    form .wrap-confirmacion h1{
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 25%;
+    }
+    .wrap-eventos .col {
+        width: 35%;
+        padding: 0 10px;
+    }
+    .wrap-eventos h5 {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+    .wrap-eventos .hora,
+    .wrap-eventos a {
+        display: block;
+        margin: 6px 0;
+    }
+    .wrap-fecha {
+        width: 20%;
+    }
+    .col.col-img {
+        width: 26%;
+        vertical-align: top;
+    }
+    .wrap-novios {
+        width: 39%;
+    }
+
+    .contador-container:before {
+        top: -10px;
+        font-size: 18px;
+        width: 120px;
+        margin-left: -60px;
+    }
+    .contador-container .col,.contador-container div, .contador-container div:after {
+        display: block;
+        text-align: center;
+        margin: 0 auto 12px;
+    }
+
+    .rsvp-wrap {
+        width: 86%;
+    }
+    .rsvp-container form {
+        padding: 38px;
+    }
+    .rsvp-container .dbl-col input, .rsvp-container .dbl-col select {
+        float: none;
+        width: 100%;
+    }
+    .rsvp-container .dbl-col input:first-child {
+        margin-bottom: 24px;
+    }
+    .wrap-info-modal, .modal-wrap {
+        padding: 80px 40px;
+    }
+    .grid-item{
+        width: 50%;
+    }
+}
+
+@media (max-width: 660px) {
+    .wrap-info-modal, .modal-wrap {
+        padding: 40px 20px;
+    }
+    .propuesta {
+        background-size: cover;
+        background-image: url("../img/compromiso.jpg"), url("../img/compromiso.jpg");
+    }
+    
+    #photos{
+        padding: 0;
+    }
+    .contador-container div {
+        display: inline-block;
+        width: 24%;
+        font-size: 42px;
+        margin: 0 auto 0;
+    }
+    header {
+        padding: 5px 0;
+    }
+    .logo-wrapper{
+        width:100%;
+    }
+    .mesa-container p{
+        width:90%;
+    }
+    #overlay img {
+        width: 90%;
+        margin-left: -45%;
+    }
+ 
+    .lineas-form {
+        display: none;
+    }
+    .propuesta-section p {
+        column-count: 1;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .wrap-eventos .col {
+        width: 100%;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .carousel:before{
+        border:1px solid #fff;
+    }
+    .carousel:after {
+        height: 11px;
+    }
+    .header-nombres {
+        font-size: 44px;
+    }
+    .wrap-novios,
+    .wrap-fecha {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .wrap-eventos h5,
+    .wrap-eventos p {
+        text-align: center;
+    }
+    .wrap-eventos .hora,
+    .wrap-eventos a {
+        display: block;
+        text-align: center;
+        margin: 12px auto;
+        width: 145px;
+    }
+    .direccion-img {
+        display: none;
+    }
+    .wrap-fecha {
+        margin-bottom: 28px;
+        padding-top: 28px;
+    }
+    .contador-container .col {
+        display: inline-block;
+        width: 24%;
+    }
+    .rsvp-container h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 360px) {}
+.rec-vestimenta::first-letter{
+    text-transform:none;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <meta property="og:image" content="https://photos.app.goo.gl/bvvoWuMtttnv6Rd38" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta property="og:title" content="La boda de Adriana y Angel "/>
+        <meta property="og:url" content="http://adriana&angel.com.mx"/>
+        <title>La boda de Adriana y Angel </title>
+        <link rel="stylesheet" type="text/css" href="./estilos/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://miboda.love/endPoint/demo1/js/contador.js"></script>
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <div class="logo-wrapper">
+            <div class="logo"><div class="logo-novia"> Adriana - & - Angel </div></div>
+        </div>
+    </header>
+
+    <audio autoplay="true" loop="true">
+        <source src="img/musica.mp3" type="audio/mpeg">
+    </audio>
+    <div class="main-page">        
+        <!-- intro -->
+        <div class="wrap-body">
+            <!-- Portada -->
+            <section class="carousel">
+                <img src="img/portada.jpg"/>
+            </section>
+            <!-- Save the date -->
+            <section class="info-pareja">
+                <h2>¡Nos casamos!</h2>
+                <p style="max-width: 610px; margin: 0 auto; line-height: 22px; font-size: 16px; margin-bottom: 24px; text-align: center; width: 90%;"
+                    >Después de 3 años en los que no hemos podido ser mas felices, finalmente decidimos casarnos, nos complace sean testigos de nuestra unión.
+                </p>
+                <div class="container">
+                    <div class="wrap-novios">
+                        <div class="wrap-novios-img novia-img" style="background-image: url('./img/adi.jpg')"></div>
+                        <h3>Adriana</h3>
+                    </div>
+                    <div class="wrap-fecha">
+                        <p>17 Julio, 2022</p>
+                        <div class="contador-container" id="contador"></div>
+                    </div>
+                    <div class="wrap-novios">
+                        <div class="wrap-novios-img novio-img" style="background-image: url('./img/angel.jpg')"></div>
+                        <h3>Angel </h3>
+                    </div>
+                </div>
+            </section>
+            <section class="eventos-container">
+                <div class="container">
+                    <div class="wrap-eventos">
+                        <div class="col">
+                            <h5>Ceremonia</h5>
+                            <p>"Basílica de Nuestra Señora de Zapopan"<br />Calle Eva Briseño 152, Zapopan, 44250 Zapopan, Jal.</p>
+                            <div class="hora">3:00 pm</div>
+                            <a href="https://goo.gl/maps/sGXM3WTfH7QiA7LK8" target="_blank">Ir al evento</a>
+                        </div>
+                        <div class="col col-img">
+                            <div class="direccion-img"></div>
+                        </div>
+                        <div class="col">
+                            <h5>Boda</h5>
+                            <p>"Gran salón los tres soles"<br />Calle Francisco I. Madero #318, Tonalá, Jalisco</p>
+                            <div class="hora">7:00 pm</div>
+                            <a href="https://goo.gl/maps/oin9SwWc2cDZSzVz8" target="_blank">Ir al evento</a>
+                        </div>
+                    </div>
+                </div>
+            </section><section class="propuesta" id="#propuesta" data-stellar-horizontal-offset="50%" data-stellar-background-ratio=".8">
+        <div class="container">
+                <h3>¡Como decidimos que estaríamos juntos para siempre!</h3>
+                <p class="comillas">Desde el inicio sabíamos que terminariamos juntos, nuestro amor, nuestra confianza y respeto siempre fueron claves en nuestro noviazgo. Y así sin pensarlo mucho nuestro compromiso sucedio en la playa, nuestro lugar favorito. El si acepto comenzo el 17 de marzo del 2019. </p>
+                <h2 style="font-weight: 100;">Nos amamos, pero no es para tanto, es para siempre.</h2>
+            </div>
+        </section>    <section class="rsvp-container">
+        <div class="rsvp-wrap">
+            <form>
+                <div class="lineas-form"></div>
+                <h2>Confirma tu asistencia.</h2>
+                <small>Esto solo es para nuestro control de invitados, agradecemos su comprensión.</small>
+                
+                    <a href="https://wa.me/523334820276?text=Confirmo%20asistencia%20somos%20(escribe la familia que eres):" target="blank">
+                        <input onclick = "recogerDatos" type="button" value="Enviar mensaje" class="confirmar" >
+                    </a>
+                    <div class="row dbl-col">
+                        <a required name="" class="num-invitados" id="invitados"></a>
+                    </div>
+                <div class="wrap-confirmacion"></div>
+            </form>
+        </div>
+        </section>        
+        <section class="galeria-container galeria" id="photos">
+            <div id="photos-galeria">
+                <div class='grid-item'><img src='./img/album-1.jpeg'/></div><div class='grid-item'><img src='./img/album-2.jpeg'/></div><div class='grid-item'><img src='./img/album-3.jpeg'/></div><div class='grid-item'><img src='./img/album-4.jpeg'/></div><div class='grid-item'><img src='./img/album-5.jpeg'/></div><div class='grid-item'><img src='./img/album-6.jpeg'/></div><div class='grid-item'><img src='./img/album-7.jpeg'/></div><div class='grid-item'><img src='./img/album-8.jpeg'/></div>
+            </div>
+        </section>    
+        <!-- Recomendaciones -->
+        <section class="recomendaciones-section">
+            <h2>Nuestras recomendaciones <a target="_blank" href="">#ViveConAmor_a&a</a></h2>
+            <p class="recomendaciones-texto"></p> 
+            <div id="recomendaciones-carousel" class="row owl-carousel owl-theme">
+                
+            <!-- Mesa de regalos 1 -->
+            <div class="wrap-recomendacion item">
+                <img src="img/amazon.png">
+                <div class="titulo-recomendacion">Mesa de regalos Amazon</div>
+                <p>Evento: Adriana & Angel</p>
+                <a class="btn-grl" href="https://www.amazon.com.mx/wedding/angel-israel-moreno-castellanos-adriana-lizbeth-vargas-guzman-toalaacute-jalisco-july-2022/registry/3GP2FEJB60PS0" target="_blank">Comprar regalo</a>
+            </div>
+
+            <!-- codigo de vestimenta mujer-->
+            <div class="wrap-recomendacion item">
+                <img src="https://miboda.love/endPoint/generador/recomendaciones/dresscode/formal/mujer-azul.jpg">
+                <div class="titulo-recomendacion">Código de vestimenta mujeres</div>
+                <p class="rec-vestimenta">formal </p>
+            </div>
+            <!-- Codigo de vestimenta hombre-->
+            <div class="wrap-recomendacion item">
+                <img src="https://miboda.love/endPoint/generador/recomendaciones/dresscode/formal/hombre.jpg">
+                <div class="titulo-recomendacion">Código de vestimenta hombres</div>
+                <p class="rec-vestimenta">formal </p>
+            </div>
+            <!-- Padres -->
+                
+            </div>
+        </section>   
+    </div>
+        <!-- Modal -->
+        <div class="modal-container">
+            <a href="#" class="cerrar-modal" onclick="app.cerrarModal(event)"></a>
+            <div class="modal-wrap"></div>
+        </div>
+    </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+        <script src="script/script.js"></script>   
+        <script src="./script/confirmacion.js"></script>
+</body>
+</html>
