@@ -7,67 +7,7 @@ var app = {
             $("#invitados").append("<option value='" + i + "'>" + i + " invitado(s)</option>");
         }
     },
-    enviarConfirmacion: function (event) {
-        event.preventDefault();
-        localStorage.setItem('confirmado', true);
-        alergia_input = ($("#alergia").val() == null) ? "" : $("#alergia").val();
-        alcohol_input = ($("#alcohol").val() == null) ? "" : $("#alcohol").val();
-        cancion_input = ($("#cancion").val() == null) ? "" : $("#cancion").val();
-        var data = {
-            user_name: $(".usr-nombre").val(),
-            user_email: $(".usr-correo").val(),
-            user_comentarios: $(".deseos-invitados").val(),
-            user_invitados: $(".num-invitados").val(),
-            uid_fire: "pNPGzPBhnedBkdgl3iGyymaEBJQ2",
-            cancion: $("#cancion").val(),
-            admin_user: "wK3T3I6uk9jU2bfYlK6u3tjozsTStX2xtMA=",
-            hashtag: "bodah&m",
-            url_boda: "http://marinayhector.com.mx/",
-            direccion_texto: `"Parroquia Santiago Apóstol"<br />
-Sixto Gorjón, Centro, Tequila, Jalisco, México`,
-            historia: `Después de 5 años en los que no hemos podido ser mas felices, finalmente decidimos casarnos, nos complace sean participes de nuestra unión.`,
-            llave_invitado: window.location.search.replace(/\?/g, '')
-        };
-
-        $.ajax({
-            type: "GET",
-            url: "https://invitacionesinteligentes.mx/notificaciones-mbl/endpoint-mail-qr.php",
-            dataType: 'json',
-            traditional: true,
-            data: data,
-            beforeSend: function (data) {
-                $(".wrap-send").fadeIn();
-            },
-            success: function (respuesta) {
-                console.log(respuesta);
-                setTimeout(function () {
-                    $(".enviando").hide();
-                    $(".wrap-confirmacion").show().html(
-                        `<h1>¡Muchas Gracias por tu confirmación <b></b>, te esperamos en nuestra Boda!</h1>`
-                    );
-                }, 3000);
-            },
-            error: function (respuesta) {
-                console.log(respuesta);
-                $(".enviando").hide();
-                $(".wrap-confirmacion").show().html(
-                    `<h1>¡Muchas Gracias por tu confirmación <b></b>, te esperamos en nuestra Boda!</h1>`
-                );
-            }
-        });
-        firebase.database().ref("datosBoda/" + data.uid_fire + "/invitados").push({
-            nombre_invitado: data.user_name,
-            correo_invitado: data.user_email,
-            num_invitado: data.user_invitados,
-            deseos_invitados: data.user_comentarios,
-            fecha_invitado: Date(Date.now()),
-            alergia: alergia_input,
-            alcohol: alcohol_input,
-            cancion: cancion_input,
-            codigo: window.location.search.replace(/\?/g, '')
-
-        });
-    },
+    
     galeriaOpt: {
         autoplay: true,
         autoplayHoverPause: true,

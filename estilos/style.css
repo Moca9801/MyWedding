@@ -318,7 +318,7 @@ div.wrap-novios-img {
 }
 
 .contador-container:before {
-    content: "Faltan";
+    content: "Pasaron";
     background: #fff;
     position: absolute;
     top: -15px;
